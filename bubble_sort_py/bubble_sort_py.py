@@ -12,9 +12,7 @@ def sort_func(sort=[],repeat=False):
     while (t):
         for i in range(0,le-1):
             if sort[i] > sort[i + 1]:
-                tmp1 = sort[i];
-                sort[i] = sort[i + 1];
-                sort[i + 1] = tmp1;
+                sort[i], sort[i + 1] = sort[i + 1], sort[i];
                 j = 0;
             elif sort[i] == sort[i + 1] and repeat==False:
                 del sort[i]
